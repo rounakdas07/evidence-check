@@ -1,0 +1,10 @@
+Classify each candidate claim using ONLY its supplied evidence_summary. Do not use outside knowledge. The summaries are curated paraphrases, not full papers.
+Return one JSON object per line with exactly these keys: id, prediction.
+Allowed prediction values:
+- supported: every material part of the claim follows from the supplied evidence.
+- contradicted: the supplied evidence explicitly conflicts with a material part of the claim.
+- not_established: the evidence is insufficient, including extrapolation across species, population, treatment or causality.
+If evidence explicitly conflicts with a claim, prefer contradicted to not_established. Otherwise a stronger claim than the evidence warrants is not_established. Absence of evidence is not evidence of absence.
+Preserve species, intervention direction, population, event grade, treatment arm and denominator. Judge claims, not overall target safety.
+Output JSONL only. Example format: {"id":"EC01","prediction":"not_established"}
+Do not consult the answer key.

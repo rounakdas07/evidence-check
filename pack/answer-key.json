@@ -1,0 +1,200 @@
+[
+  {
+    "id": "EC01",
+    "source_id": "vegf",
+    "check": "Missing denominator",
+    "claim": "Renal TMA occurred in 100% of bevacizumab-treated patients.",
+    "expected": "not_established",
+    "reason": "Six selected cases provide no incidence denominator for everyone treated.",
+    "suite_version": "1.0.0",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/18337603/",
+    "annotation_status": "draft_not_expert_adjudicated"
+  },
+  {
+    "id": "EC02",
+    "source_id": "vegf",
+    "check": "Reported observation",
+    "claim": "Six bevacizumab-treated patients developed renal lesions consistent with TMA.",
+    "expected": "supported",
+    "reason": "This preserves the reported case count without inventing an incidence rate.",
+    "suite_version": "1.0.0",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/18337603/",
+    "annotation_status": "draft_not_expert_adjudicated"
+  },
+  {
+    "id": "EC03",
+    "source_id": "vegf",
+    "check": "Effect direction",
+    "claim": "Deleting VEGF in adult mouse podocytes prevented thrombotic glomerular injury.",
+    "expected": "contradicted",
+    "reason": "The deletion produced injury; it did not prevent it.",
+    "suite_version": "1.0.0",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/18337603/",
+    "annotation_status": "draft_not_expert_adjudicated"
+  },
+  {
+    "id": "EC04",
+    "source_id": "her2",
+    "check": "Species boundary",
+    "claim": "This mouse experiment establishes the cardiomyopathy rate in patients receiving trastuzumab.",
+    "expected": "not_established",
+    "reason": "An experimental mouse phenotype supplies no patient incidence estimate.",
+    "suite_version": "1.0.0",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/12072561/",
+    "annotation_status": "draft_not_expert_adjudicated"
+  },
+  {
+    "id": "EC05",
+    "source_id": "her2",
+    "check": "Reported observation",
+    "claim": "Disrupting ErbB2 in mouse ventricular cardiomyocytes led to dilated cardiomyopathy.",
+    "expected": "supported",
+    "reason": "The intervention, species and reported phenotype are retained.",
+    "suite_version": "1.0.0",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/12072561/",
+    "annotation_status": "draft_not_expert_adjudicated"
+  },
+  {
+    "id": "EC06",
+    "source_id": "her2",
+    "check": "Intervention direction",
+    "claim": "The experimental intervention increased ErbB2 activity in mouse ventricular cardiomyocytes.",
+    "expected": "contradicted",
+    "reason": "ErbB2 was disrupted, not activated.",
+    "suite_version": "1.0.0",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/12072561/",
+    "annotation_status": "draft_not_expert_adjudicated"
+  },
+  {
+    "id": "EC07",
+    "source_id": "pd1",
+    "check": "Genetic context",
+    "claim": "PD-1 disruption caused cardiomyopathy in BALB/c mice even when RAG-2 was also absent.",
+    "expected": "contradicted",
+    "reason": "The abstract explicitly excludes that RAG-2-deficient background.",
+    "suite_version": "1.0.0",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/11209085/",
+    "annotation_status": "draft_not_expert_adjudicated"
+  },
+  {
+    "id": "EC08",
+    "source_id": "pd1",
+    "check": "Reported observation",
+    "claim": "PD-1 disruption caused dilated cardiomyopathy in BALB/c mice.",
+    "expected": "supported",
+    "reason": "This reports the phenotype in the stated mouse background.",
+    "suite_version": "1.0.0",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/11209085/",
+    "annotation_status": "draft_not_expert_adjudicated"
+  },
+  {
+    "id": "EC09",
+    "source_id": "pd1",
+    "check": "Species boundary",
+    "claim": "PD-1-blocking drugs inevitably cause heart failure in humans.",
+    "expected": "not_established",
+    "reason": "Mouse gene-disruption findings cannot establish an inevitable human drug effect.",
+    "suite_version": "1.0.0",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/11209085/",
+    "annotation_status": "draft_not_expert_adjudicated"
+  },
+  {
+    "id": "EC10",
+    "source_id": "ctla4",
+    "check": "Effect direction",
+    "claim": "CTLA-4 loss reduced peripheral T-cell activation in the reported mice.",
+    "expected": "contradicted",
+    "reason": "The mice had activated peripheral T cells and spontaneous proliferation.",
+    "suite_version": "1.0.0",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/7584144/",
+    "annotation_status": "draft_not_expert_adjudicated"
+  },
+  {
+    "id": "EC11",
+    "source_id": "ctla4",
+    "check": "Reported observation",
+    "claim": "CTLA-4-deficient mice developed lymphoproliferative disease with multiorgan tissue injury.",
+    "expected": "supported",
+    "reason": "This preserves the model and observed tissue injury.",
+    "suite_version": "1.0.0",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/7584144/",
+    "annotation_status": "draft_not_expert_adjudicated"
+  },
+  {
+    "id": "EC12",
+    "source_id": "ctla4",
+    "check": "Species boundary",
+    "claim": "Patients receiving CTLA-4-blocking drugs die within four weeks.",
+    "expected": "not_established",
+    "reason": "Mouse knockout mortality does not establish mortality after human drug treatment.",
+    "suite_version": "1.0.0",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/7584144/",
+    "annotation_status": "draft_not_expert_adjudicated"
+  },
+  {
+    "id": "EC13",
+    "source_id": "pi3k",
+    "check": "Population scope",
+    "claim": "The reported 36.6% hyperglycaemia rate applies specifically to the PIK3CA-mutated subgroup.",
+    "expected": "not_established",
+    "reason": "The supplied safety rate is for the overall population, not that subgroup.",
+    "suite_version": "1.0.0",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/31091374/",
+    "annotation_status": "draft_not_expert_adjudicated"
+  },
+  {
+    "id": "EC14",
+    "source_id": "pi3k",
+    "check": "Reported observation",
+    "claim": "Grade 3–4 hyperglycaemia was more frequent with alpelisib–fulvestrant than placebo–fulvestrant.",
+    "expected": "supported",
+    "reason": "The reported comparison is 36.6% versus 0.7%.",
+    "suite_version": "1.0.0",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/31091374/",
+    "annotation_status": "draft_not_expert_adjudicated"
+  },
+  {
+    "id": "EC15",
+    "source_id": "pi3k",
+    "check": "Explicit negation",
+    "claim": "Grade 4 diarrhoea was observed in SOLAR-1.",
+    "expected": "contradicted",
+    "reason": "The abstract explicitly reports no grade 4 diarrhoea.",
+    "suite_version": "1.0.0",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/31091374/",
+    "annotation_status": "draft_not_expert_adjudicated"
+  },
+  {
+    "id": "EC16",
+    "source_id": "checkpoint",
+    "check": "Treatment attribution",
+    "claim": "Every severe event in the combination arm was caused exclusively by PD-1 inhibition.",
+    "expected": "not_established",
+    "reason": "Arm-level event rates cannot assign every event to one target.",
+    "suite_version": "1.0.0",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/26027431/",
+    "annotation_status": "draft_not_expert_adjudicated"
+  },
+  {
+    "id": "EC17",
+    "source_id": "checkpoint",
+    "check": "Reported observation",
+    "claim": "Treatment-related grade 3–4 events were more frequent with the combination than either monotherapy.",
+    "expected": "supported",
+    "reason": "The combination rate, 55.0%, exceeds both monotherapy rates.",
+    "suite_version": "1.0.0",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/26027431/",
+    "annotation_status": "draft_not_expert_adjudicated"
+  },
+  {
+    "id": "EC18",
+    "source_id": "checkpoint",
+    "check": "Arm mix-up",
+    "claim": "Treatment-related grade 3–4 events occurred in 55.0% of the nivolumab-only group.",
+    "expected": "contradicted",
+    "reason": "55.0% belongs to the combination arm; nivolumab alone was 16.3%.",
+    "suite_version": "1.0.0",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/26027431/",
+    "annotation_status": "draft_not_expert_adjudicated"
+  }
+]

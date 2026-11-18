@@ -1,0 +1,10 @@
+{
+  "suite": "Evidence Check",
+  "version": "1.0.0",
+  "review_date": "2026-11-18",
+  "cases": 18,
+  "sources": 6,
+  "labels": "Draft, AI-assisted; not independently expert-adjudicated",
+  "demonstration": "Scripted predictions are not results from any model",
+  "task": "Classify constructed claims against curated evidence paraphrases"
+}

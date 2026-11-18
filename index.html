@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evidence Check — keep oncology claims within the evidence</title>
+  <meta name="description" content="18 source-linked oncology checks for AI evidence summaries. Inspect claims, test model outputs and export the errors for review.">
+  <meta property="og:title" content="Evidence Check — a citation isn't proof">
+  <meta property="og:description" content="18 oncology checks. Six primary studies. Find the claims that go beyond the evidence.">
+  <meta property="og:type" content="website"><meta property="og:url" content="https://rounakdas07.github.io/evidence-check/">
+  <meta property="og:image" content="https://rounakdas07.github.io/evidence-check/docs/screenshot.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#203d53"><link rel="icon" href="mark.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/dm-sans.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="styles.css"><script type="module" src="app.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#workspace">Skip to the tool</a>
+<header class="site-header wrap">
+  <a class="brand" href="#top" aria-label="Evidence Check home"><span class="mark" aria-hidden="true">e<span>✓</span></span>evidence check<span class="edition">/ oncology</span></a>
+  <nav aria-label="Main"><a href="#workspace">The checks</a><a href="#method">Method</a><a class="repo-link" href="https://github.com/rounakdas07/evidence-check" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></nav>
+</header>
+<main id="top">
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-copy"><p class="eyebrow"><span class="dot"></span> A small test for a consequential mistake</p>
+      <h1 id="hero-title">Catch the claim<br> that goes<br> <span>too far.</span></h1>
+      <p class="lede">Check whether AI-generated oncology safety claims stay within the evidence.</p>
+      <div class="actions"><a class="button primary" href="#workspace">Explore the checks <span aria-hidden="true">↘</span></a><button class="button quiet" id="hero-test">Test a model <span aria-hidden="true">→</span></button></div>
+      <p class="hero-note">18 checks · 6 primary studies · Open, downloadable data</p>
+    </div>
+    <div class="example" aria-label="Example of an unsupported incidence claim">
+      <div class="example-top"><span>THE DENOMINATOR TRAP</span><span>01 / 18</span></div>
+      <p class="example-label">The paper reports</p>
+      <div class="example-stat"><strong>6</strong><p>reported cases of renal injury<br>after bevacizumab</p></div>
+      <div class="example-divider"><span>does not establish</span><span aria-hidden="true">↓</span></div>
+      <p class="example-claim">“100% of treated patients<br> developed renal injury.”</p>
+      <div class="example-verdict"><span class="status not_established">Not established</span><p>A case count needs a denominator before it becomes a risk estimate.</p></div>
+      <a class="source-link" href="https://pubmed.ncbi.nlm.nih.gov/18337603/" target="_blank" rel="noopener">Eremina et al., NEJM 2008 <span aria-hidden="true">↗</span></a>
+      <span class="example-caption">Constructed test claim · paraphrased evidence</span>
+    </div>
+  </section>
+  <div class="value-strip"><div class="wrap strip-inner"><p><strong>One practical use:</strong> rerun the same cases after a prompt or model change.</p><span>See exactly which claims cross the line.</span></div></div>
+  <section id="workspace" class="workspace wrap" aria-labelledby="workspace-title">
+    <div class="section-heading"><div><p class="eyebrow">The working set</p><h2 id="workspace-title">Evidence first. Verdict second.</h2></div><p>Inspect a case, or bring model predictions<br class="desktop"> and get a reproducible error report.</p></div>
+    <div class="tabs" role="tablist" aria-label="Tool mode"><button role="tab" id="tab-explore" aria-controls="explore" aria-selected="true">Explore 18 checks</button><button role="tab" id="tab-evaluate" aria-controls="evaluate" aria-selected="false" tabindex="-1">Test model outputs</button></div>
+    <div id="explore" role="tabpanel" aria-labelledby="tab-explore">
+      <div class="explorer"><aside class="study-list" aria-label="Choose a study"><p class="small-label">CHOOSE A STUDY</p><div id="study-buttons"></div><p class="aside-note">Three claims per paper.<br>Same evidence, different inference.</p></aside>
+      <div class="case-area" id="case-area"></div></div>
+    </div>
+    <div id="evaluate" role="tabpanel" aria-labelledby="tab-evaluate" hidden>
+      <div class="eval-intro"><h3>Test a model against the same 18 claims.</h3><p>Run the inputs in your own model. Paste its labels here to compare them with the draft reference answers. This page scores labels; it does not run an AI model or assess arbitrary text.</p></div>
+      <div class="eval-steps">
+        <section class="eval-step"><span class="step-number">01</span><h4>Get the test</h4><p>18 evidence–claim pairs, without the answers. Give these and the prompt to your model.</p><button class="button primary" id="download-inputs">Download inputs <span aria-hidden="true">↓</span></button><button class="text-button" id="copy-prompt">Copy evaluation prompt</button><details class="prompt-details"><summary>Read the prompt</summary><pre id="prompt-text"></pre></details></section>
+        <section class="eval-step input-step"><span class="step-number">02</span><h4>Bring the predictions</h4><label for="prediction-input">JSON array or one JSON object per line</label><textarea id="prediction-input" spellcheck="false" placeholder='{"id":"EC01","prediction":"not_established"}'></textarea><div class="input-actions"><label class="file-button" for="prediction-file">Choose JSON / JSONL file</label><input type="file" id="prediction-file" accept=".json,.jsonl,application/json,text/plain"><button class="text-button" id="demo">Load scripted example</button></div><p class="input-note">Processed in this browser. Nothing is uploaded.</p><div id="input-error" role="alert"></div><button class="button primary" id="score">Score predictions <span aria-hidden="true">→</span></button></section>
+      </div>
+      <div id="results" aria-live="polite"></div>
+    </div>
+    <p class="dataset-status">v1.0.0 · Draft reference labels, not independently expert-adjudicated. <a href="#method">Read the limits ↓</a></p>
+  </section>
+  <section class="method-section" id="method" aria-labelledby="method-title"><div class="wrap method-grid"><div><p class="eyebrow">Why this exists</p><h2 id="method-title">A source link is<br> only the start.</h2><p class="method-lede">The claim must also preserve what was studied, what changed, and what the result can actually establish.</p></div><div class="method-body">
+    <h3>Built around a real evidence workflow</h3><p>Sable Bio describes source-linked AI evidence observations and a separate relationship-extraction benchmark. This independent project offers a small oncology challenge pack for checking claim boundaries. It does not evaluate Sable’s system or imply a missing internal capability.</p><a href="https://sablebio.com/news/designing-llm-workflows-for-target-safety" target="_blank" rel="noopener" class="source-link">Read Sable’s workflow article ↗</a>
+    <details><summary>What the three labels mean</summary><dl><dt>Supported</dt><dd>Every material part follows from the supplied summary.</dd><dt>Contradicted</dt><dd>The summary explicitly conflicts with part of the claim.</dd><dt>Not established</dt><dd>The summary is insufficient. An unsupported claim is not automatically false.</dd></dl></details>
+    <details><summary>How the dataset was made</summary><p>Six primary-study abstracts were read to create concise, original evidence paraphrases. Each has one supported claim, one contradiction and one overreach. All 18 claims are constructed tests, not quotations or captured model outputs. Cases were prepared with AI assistance; reference labels remain provisional pending independent scientific review.</p><p>The task is entailment against the supplied paraphrase, not extraction from the full paper. Each paper forms a group of three related cases: split by paper, not individual case, if adapting this for training.</p></details>
+    <details><summary>What a score can—and cannot—tell you</summary><p>Agreement measures exact label matches among submitted cases. Coverage is reported separately. Macro-F1 is available only with all 18 predictions. “Unsupported claims accepted” counts contradicted or not-established reference claims labelled supported.</p><p>This tiny, deliberately balanced set has no statistical power to certify reliability. Sources are familiar historical papers, so model training contamination is possible. It is not a systematic review, current prescribing resource, clinical safety score or independently validated benchmark.</p></details>
+    <details><summary>Sources, answer key and reproducibility</summary><div id="source-register"></div><div class="method-downloads"><button class="text-button" id="download-key">Download answer key ↓</button><a href="https://github.com/rounakdas07/evidence-check" target="_blank" rel="noopener">Code, scoring script & annotation guide ↗</a></div></details>
+  </div></div></section>
+</main>
+<footer class="wrap"><a class="brand" href="#top">evidence check<span class="edition">/ oncology</span></a><p>Built by Rounak Das · Independent research prototype<br>Not affiliated with Sable Bio. For research evaluation, not clinical decisions.</p><a href="https://github.com/rounakdas07/evidence-check" target="_blank" rel="noopener">View source ↗</a></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript><p class="wrap">Enable JavaScript to inspect the cases and score predictions. The sources and method above remain readable.</p></noscript>
+</body></html>
