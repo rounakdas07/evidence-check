@@ -8,6 +8,8 @@ Built by [Rounak Das](https://github.com/rounakdas07). Independent project, not 
 
 [Open Paper Shortlist](https://rounakdas07.github.io/evidence-check/paper-shortlist/)
 
+![Paper Shortlist interface](docs/screenshot.jpg)
+
 ## Try it
 
 Eight published TrkB / BDNF papers are preloaded. No account or key is needed.
