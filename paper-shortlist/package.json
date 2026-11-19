@@ -1,0 +1,9 @@
+{
+  "name": "paper-shortlist",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Screen research abstracts and export a source-linked reading shortlist.",
+  "scripts": { "test": "node --test tests/*.test.mjs", "check": "node --check app.mjs && node --check core.mjs" },
+  "license": "MIT"
+}

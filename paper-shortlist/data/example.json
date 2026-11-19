@@ -1,0 +1,138 @@
+[
+  {
+    "pmid": "34451801",
+    "title": "Do Small Molecules Activate the TrkB Receptor in the Same Manner as BDNF? Limitations of Published TrkB Low Molecular Agonists and Screening for Novel TrkB Orthosteric Agonists.",
+    "abstract": "TrkB is a tyrosine kinase receptor that is activated upon binding to brain-derived neurotrophic factor (BDNF). To date, the search for low-molecular-weight molecules mimicking BDNF's action has been unsuccessful. Several molecules exerting antidepressive effects in vivo, such as 7,8-DHF, have been suggested to be TrkB agonists. However, more recent publications question this hypothesis. In this study, we developed a set of experimental procedures including the evaluation of direct interactions, dimerization, downstream signaling, and cytoprotection in parallel with physicochemical and ADME methods to verify the pharmacology of 7,8-DHF and other potential reference compounds, and perform screening for novel TrkB agonists. 7,8 DHF bound to TrkB with K<sub>d</sub> = 1.3 μM; however, we were not able to observe any other activity against the TrkB receptor in SN56 T48 and differentiated SH-SY5Y cell lines. Moreover, the pharmacokinetic and pharmacodynamic effects of 7,8-DHF at doses of 1 and 50 mg/kg were examined in mice after i.v and oral administration, respectively. The poor pharmacokinetic properties and lack of observed activation of TrkB-dependent signaling in the brain confirmed that 7,8-DHF is not a relevant tool for studying TrkB activation in vivo. The binding profile for 133 molecular targets revealed a significant lack of selectivity of 7,8-DHF, suggesting a distinct functional profile independent of interaction with TrkB. Additionally, a compound library was screened in search of novel low-molecular-weight orthosteric TrkB agonists; however, we were not able to identify reliable drug candidates. Our results suggest that published reference compounds including 7,8-DHF do not activate TrkB, consistent with canonical dogma, which indicates that the reported pharmacological activity of these compounds should be interpreted carefully in a broad functional context.",
+    "authors": "Pankiewicz P, Szybiński M, Kisielewska K, Gołębiowski F, Krzemiński P, Rutkowska-Włodarczyk I, Moszczyński-Pętkowski R, Gurba-Bryśkiewicz L, Delis M, Mulewski K, Smuga D, Dominowski J, Janusz A, Górka M, Abramski K, Napiórkowska A, Nowotny M, Dubiel K, Kalita K, Wieczorek M, Pieczykolan J, Matłoka M.",
+    "year": "2021",
+    "doi": "10.3390/ph14080704",
+    "journal": "Pharmaceuticals (Basel, Switzerland)",
+    "types": [
+      "research-article",
+      "Journal Article"
+    ],
+    "license": "cc by",
+    "origin": "Example · Europe PMC snapshot 19 Nov 2026",
+    "pmcid": "PMC8398766"
+  },
+  {
+    "pmid": "33606976",
+    "title": "Antidepressant drugs act by directly binding to TRKB neurotrophin receptors.",
+    "abstract": "It is unclear how binding of antidepressant drugs to their targets gives rise to the clinical antidepressant effect. We discovered that the transmembrane domain of tyrosine kinase receptor 2 (TRKB), the brain-derived neurotrophic factor (BDNF) receptor that promotes neuronal plasticity and antidepressant responses, has a cholesterol-sensing function that mediates synaptic effects of cholesterol. We then found that both typical and fast-acting antidepressants directly bind to TRKB, thereby facilitating synaptic localization of TRKB and its activation by BDNF. Extensive computational approaches including atomistic molecular dynamics simulations revealed a binding site at the transmembrane region of TRKB dimers. Mutation of the TRKB antidepressant-binding motif impaired cellular, behavioral, and plasticity-promoting responses to antidepressants in vitro and in vivo. We suggest that binding to TRKB and allosteric facilitation of BDNF signaling is the common mechanism for antidepressant action, which may explain why typical antidepressants act slowly and how molecular effects of antidepressants are translated into clinical mood recovery.",
+    "authors": "Casarotto PC, Girych M, Fred SM, Kovaleva V, Moliner R, Enkavi G, Biojone C, Cannarozzo C, Sahu MP, Kaurinkoski K, Brunello CA, Steinzeig A, Winkel F, Patil S, Vestring S, Serchov T, Diniz CRAF, Laukkanen L, Cardon I, Antila H, Rog T, Piepponen TP, Bramham CR, Normann C, Lauri SE, Saarma M, Vattulainen I, Castrén E.",
+    "year": "2021",
+    "doi": "10.1016/j.cell.2021.01.034",
+    "journal": "Cell",
+    "types": [
+      "Research Support, Non-U.S. Gov't",
+      "research-article",
+      "Journal Article"
+    ],
+    "license": "cc by",
+    "origin": "Example · Europe PMC snapshot 19 Nov 2026",
+    "pmcid": "PMC7938888"
+  },
+  {
+    "pmid": "24802307",
+    "title": "Decreased BDNF and TrkB mRNA expression in multiple cortical areas of patients with schizophrenia and mood disorders.",
+    "abstract": "Abnormalities in brain-derived neurotrophic factor (BDNF)/trkB signaling have been implicated in the etiology of schizophrenia and mood disorders. Patients with schizophrenia, bipolar disorder (BPD) and major depression (MDD) have reduced levels of neurotrophins in their brains when compared with normal unaffected individuals; however, only a few brain areas have been examined to date. Owing to the broad range of symptoms manifested in these disorders, we hypothesized that multiple associative areas of the neocortex may be implicated and that the degree of change in BDNF and trkB-TK+ mRNA expression and the cortical region or layers involved may vary according to Diagnostic and Statistical Manual of Mental Disorders (DSM) diagnosis. We compared BDNF and trkB-TK+ mRNA levels across all layers of the prefrontal cortex (dorsolateral prefrontal cortex, DLPFC), orbital frontal cortex (OFC), anterior cingulate cortex (ACC), inferior temporal gyrus (ITG) and superior temporal gyrus (STG) in four groups: schizophrenia, BPD, MDD and unaffected controls (n=60). BDNF mRNA levels were significantly decreased in layers IV and V of DLPFC in schizophrenia patients, in layer VI of ACC in schizophrenia and MDD and in layer VI of ITG in schizophrenia, BPD and MDD. BDNF mRNA levels were also significantly decreased in layer V and/or VI of STG in schizophrenia, BPD and MDD. TrkB-TK+ mRNA levels were only significantly decreased in the cortical layer VI of OFC in BPD. The shared and distinct patterns of neurotrophin transcript reductions, with some specific to each group, may compromise the function and plasticity of distinct cortical areas to various degrees in the different groups and contribute to the range and overlap of symptoms manifested across the diagnoses.",
+    "authors": "Ray MT, Shannon Weickert C, Webster MJ.",
+    "year": "2014",
+    "doi": "10.1038/tp.2014.26",
+    "journal": "Translational psychiatry",
+    "types": [
+      "Research Support, Non-U.S. Gov't",
+      "research-article",
+      "Journal Article"
+    ],
+    "license": "cc by",
+    "origin": "Example · Europe PMC snapshot 19 Nov 2026",
+    "pmcid": "PMC4035720"
+  },
+  {
+    "pmid": "33096634",
+    "title": "Neurotrophic Factor BDNF, Physiological Functions and Therapeutic Potential in Depression, Neurodegeneration and Brain Cancer.",
+    "abstract": "Brain-derived neurotrophic factor (BDNF) is one of the most distributed and extensively studied neurotrophins in the mammalian brain. BDNF signals through the tropomycin receptor kinase B (TrkB) and the low affinity p75 neurotrophin receptor (p75NTR). BDNF plays an important role in proper growth, development, and plasticity of glutamatergic and GABAergic synapses and through modulation of neuronal differentiation, it influences serotonergic and dopaminergic neurotransmission. BDNF acts as paracrine and autocrine factor, on both pre-synaptic and post-synaptic target sites. It is crucial in the transformation of synaptic activity into long-term synaptic memories. BDNF is considered an instructive mediator of functional and structural plasticity in the central nervous system (CNS), influencing dendritic spines and, at least in the hippocampus, the adult neurogenesis. Changes in the rate of adult neurogenesis and in spine density can influence several forms of learning and memory and can contribute to depression-like behaviors. The possible roles of BDNF in neuronal plasticity highlighted in this review focus on the effect of antidepressant therapies on BDNF-mediated plasticity. Moreover, we will review data that illustrate the role of BDNF as a potent protective factor that is able to confer protection against neurodegeneration, in particular in Alzheimer's disease. Finally, we will give evidence of how the involvement of BDNF in the pathogenesis of brain glioblastoma has emerged, thus opening new avenues for the treatment of this deadly cancer.",
+    "authors": "Colucci-D'Amato L, Speranza L, Volpicelli F.",
+    "year": "2020",
+    "doi": "10.3390/ijms21207777",
+    "journal": "International journal of molecular sciences",
+    "types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "license": "cc by",
+    "origin": "Example · Europe PMC snapshot 19 Nov 2026",
+    "pmcid": "PMC7589016"
+  },
+  {
+    "pmid": "27253067",
+    "title": "Exercise promotes the expression of brain derived neurotrophic factor (BDNF) through the action of the ketone body β-hydroxybutyrate.",
+    "abstract": "Exercise induces beneficial responses in the brain, which is accompanied by an increase in BDNF, a trophic factor associated with cognitive improvement and the alleviation of depression and anxiety. However, the exact mechanisms whereby physical exercise produces an induction in brain Bdnf gene expression are not well understood. While pharmacological doses of HDAC inhibitors exert positive effects on Bdnf gene transcription, the inhibitors represent small molecules that do not occur in vivo. Here, we report that an endogenous molecule released after exercise is capable of inducing key promoters of the Mus musculus Bdnf gene. The metabolite β-hydroxybutyrate, which increases after prolonged exercise, induces the activities of Bdnf promoters, particularly promoter I, which is activity-dependent. We have discovered that the action of β-hydroxybutyrate is specifically upon HDAC2 and HDAC3, which act upon selective Bdnf promoters. Moreover, the effects upon hippocampal Bdnf expression were observed after direct ventricular application of β-hydroxybutyrate. Electrophysiological measurements indicate that β-hydroxybutyrate causes an increase in neurotransmitter release, which is dependent upon the TrkB receptor. These results reveal an endogenous mechanism to explain how physical exercise leads to the induction of BDNF.",
+    "authors": "Sleiman SF, Henry J, Al-Haddad R, El Hayek L, Abou Haidar E, Stringer T, Ulja D, Karuppagounder SS, Holson EB, Ratan RR, Ninan I, Chao MV.",
+    "year": "2016",
+    "doi": "10.7554/elife.15092",
+    "journal": "eLife",
+    "types": [
+      "Research Support, Non-U.S. Gov't",
+      "research-article",
+      "Journal Article",
+      "Research Support, N.I.H., Extramural"
+    ],
+    "license": "cc by",
+    "origin": "Example · Europe PMC snapshot 19 Nov 2026",
+    "pmcid": "PMC4915811"
+  },
+  {
+    "pmid": "26327690",
+    "title": "R-ketamine: a rapid-onset and sustained antidepressant without psychotomimetic side effects.",
+    "abstract": "Although the efficacy of racemate ketamine, a rapid onset and sustained antidepressant, for patients with treatment-resistant depression was a serendipitous finding, clinical use of ketamine is limited, due to psychotomimetic side effects and abuse liability. Behavioral and side-effect evaluation tests were applied to compare the two stereoisomers of ketamine. To elucidate their potential therapeutic mechanisms, we examined the effects of these stereoisomers on brain-derived neurotrophic factor (BDNF)-TrkB signaling, and synaptogenesis in selected brain regions. In the social defeat stress and learned helplessness models of depression, R-ketamine showed a greater potency and longer-lasting antidepressant effect than S-ketamine (esketamine). Furthermore, R-ketamine induced a more potent beneficial effect on decreased dendritic spine density, BDNF-TrkB signaling and synaptogenesis in the prefrontal cortex (PFC), CA3 and dentate gyrus (DG) of the hippocampus from depressed mice compared with S-ketamine. However, neither stereoisomer affected these alterations in the nucleus accumbens of depressed mice. In behavioral tests for side effects, S-ketamine, but not R-ketamine, precipitated behavioral abnormalities, such as hyperlocomotion, prepulse inhibition deficits and rewarding effects. In addition, a single dose of S-ketamine, but not R-ketamine, caused a loss of parvalbumin (PV)-positive cells in the prelimbic region of the medial PFC and DG. These findings suggest that, unlike S-ketamine, R-ketamine can elicit a sustained antidepressant effect, mediated by increased BDNF-TrkB signaling and synaptogenesis in the PFC, DG and CA3. R-ketamine appears to be a potent, long-lasting and safe antidepressant, relative to S-ketamine, as R-ketamine appears to be free of psychotomimetic side effects and abuse liability.",
+    "authors": "Yang C, Shirayama Y, Zhang JC, Ren Q, Yao W, Ma M, Dong C, Hashimoto K.",
+    "year": "2015",
+    "doi": "10.1038/tp.2015.136",
+    "journal": "Translational psychiatry",
+    "types": [
+      "Research Support, Non-U.S. Gov't",
+      "research-article",
+      "Journal Article"
+    ],
+    "license": "cc by",
+    "origin": "Example · Europe PMC snapshot 19 Nov 2026",
+    "pmcid": "PMC5068814"
+  },
+  {
+    "pmid": "37280397",
+    "title": "Psychedelics promote plasticity by directly binding to BDNF receptor TrkB.",
+    "abstract": "Psychedelics produce fast and persistent antidepressant effects and induce neuroplasticity resembling the effects of clinically approved antidepressants. We recently reported that pharmacologically diverse antidepressants, including fluoxetine and ketamine, act by binding to TrkB, the receptor for BDNF. Here we show that lysergic acid diethylamide (LSD) and psilocin directly bind to TrkB with affinities 1,000-fold higher than those for other antidepressants, and that psychedelics and antidepressants bind to distinct but partially overlapping sites within the transmembrane domain of TrkB dimers. The effects of psychedelics on neurotrophic signaling, plasticity and antidepressant-like behavior in mice depend on TrkB binding and promotion of endogenous BDNF signaling but are independent of serotonin 2A receptor (5-HT<sub>2A</sub>) activation, whereas LSD-induced head twitching is dependent on 5-HT<sub>2A</sub> and independent of TrkB binding. Our data confirm TrkB as a common primary target for antidepressants and suggest that high-affinity TrkB positive allosteric modulators lacking 5-HT<sub>2A</sub> activity may retain the antidepressant potential of psychedelics without hallucinogenic effects.",
+    "authors": "Moliner R, Girych M, Brunello CA, Kovaleva V, Biojone C, Enkavi G, Antenucci L, Kot EF, Goncharuk SA, Kaurinkoski K, Kuutti M, Fred SM, Elsilä LV, Sakson S, Cannarozzo C, Diniz CRAF, Seiffert N, Rubiolo A, Haapaniemi H, Meshi E, Nagaeva E, Öhman T, Róg T, Kankuri E, Vilar M, Varjosalo M, Korpi ER, Permi P, Mineev KS, Saarma M, Vattulainen I, Casarotto PC, Castrén E.",
+    "year": "2023",
+    "doi": "10.1038/s41593-023-01316-5",
+    "journal": "Nature neuroscience",
+    "types": [
+      "Research Support, Non-U.S. Gov't",
+      "research-article",
+      "Journal Article"
+    ],
+    "license": "cc by",
+    "origin": "Example · Europe PMC snapshot 19 Nov 2026",
+    "pmcid": "PMC10244169"
+  },
+  {
+    "pmid": "40362507",
+    "title": "From Synaptic Plasticity to Neurodegeneration: BDNF as a Transformative Target in Medicine.",
+    "abstract": "The brain-derived neurotrophic factor (BDNF) has become one of the cornerstones of neuropathology, influencing synaptic plasticity, cognitive resilience, and neuronal survival. Apart from its molecular biology, BDNF is a powerful target for transformative benefit in precision medicine, leading to innovative therapeutic approaches for neurodegenerative and psychiatric diseases like Alzheimer's disease (AD), Parkinson's disease (PD), major depressive disorder (MDD), and post-traumatic stress disorder (PTSD). Nevertheless, clinical applicability is obstructed by hurdles in delivery, patient-specific diversity, and pleiotropic signaling. Here, we summarize findings in BDNF research, including its regulatory pathways and diagnostic/prognostic biomarkers and integrative therapeutic approaches. We describe innovative delivery systems, such as lipid nanoparticle-based mRNA therapies and CRISPR-dCas9-based epigenetic editing that bypass obstacles such as BBB (blood-brain barrier) and enzymatic degradation. The recent implementation of multiplex panels combining BDNF biodynamic indicators with tau and amyloid-β signaling markers showcases novel levels of specificity for both early detection and potential therapeutic monitoring. Humanized preclinical models like iPSC-derived neurons and organoids point to the key role of BDNF in neurodeveloping and neurodegenerative processes, paralleling advances in bridging preclinical observation and clinical environments. Moreover, novel therapeutic tools delivering TrkB activators or the implementation of AI-based dynamic care platforms enable tailored and scalable treatments. This review also aims to extend a framework used in the understanding of BDNF's relevance to traditional neurodegenerative models by situating more recent work detailing BDNF's actions in ischemic tissues and the gut-brain axis in the context of systemic health. Finally, we outline a roadmap for the incorporation of BDNF-centered therapies into worldwide healthcare, highlighting ethical issues, equity, and interdisciplinary decomposition. The therapeutic potential of BDNF heralds a new era in neuroscience and medicine, revolutionizing brain health and paving the way for the advancement of precision medicine.",
+    "authors": "Toader C, Serban M, Munteanu O, Covache-Busuioc RA, Enyedi M, Ciurea AV, Tataru CP.",
+    "year": "2025",
+    "doi": "10.3390/ijms26094271",
+    "journal": "International journal of molecular sciences",
+    "types": [
+      "review-article",
+      "Review",
+      "Journal Article"
+    ],
+    "license": "cc by",
+    "origin": "Example · Europe PMC snapshot 19 Nov 2026",
+    "pmcid": "PMC12071950"
+  }
+]
