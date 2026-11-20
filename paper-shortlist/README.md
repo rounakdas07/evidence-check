@@ -1,8 +1,8 @@
 # Paper Shortlist
 
-**Turn a batch of research abstracts into a source-linked reading list.**
+**Turn research abstracts into a comparison table you can check and use in Excel.**
 
-Open a paper, check the suggested study details and original abstract sentence, then choose **Keep**, **Maybe** or **Skip**. Download your decisions as a CSV for Excel or as a reading brief.
+The result is visible immediately: paper titles and source links, suggested compound and study clues, and an original sentence from each abstract where one is identified. Filter the table, correct a row, and download it without first reviewing every paper.
 
 Built by [Rounak Das](https://github.com/rounakdas07). Independent project, not affiliated with Pangea Bio.
 
@@ -14,16 +14,18 @@ Built by [Rounak Das](https://github.com/rounakdas07). Independent project, not 
 
 Eight published TrkB / BDNF papers are preloaded. No account or key is needed.
 
-1. Open any paper. Check the labels against the abstract or original PubMed record.
-2. Choose Keep, Maybe or Skip. Correct a label, select another sentence or add a note when needed.
-3. Download the shortlist. Every row retains its source link, decision and selected sentence.
+1. Compare the eight example papers directly in the table. Try **ketamine** to narrow the list to two papers.
+2. Open **Check / edit this row** to read the abstract, correct a label, choose another sentence or add a note. Keep / Maybe / Skip decisions are optional.
+3. **Download table** exports exactly the rows currently shown, with authors, original source links, selected sentences, suggested labels and your corrections in separate columns. CSV opens in Excel and Google Sheets.
 
-Use **Find or import papers** to search live PubMed records through Europe PMC, enter PubMed IDs, paste abstracts, or upload a PubMed `.nbib`, `.csv` or `.txt` file. Up to 50 records per API request and 250 per working list. The interface states how many search results were loaded.
+Use **Add your papers** to search live PubMed records through Europe PMC, enter PubMed IDs, paste abstracts, or upload a PubMed `.nbib`, `.csv` or `.txt` file. Pasted abstracts become a table as soon as you select **Build my table**. Up to 50 records per API request and 250 per working list. The interface states how many search results were loaded.
+
+On phones, the same rows become readable cards. **More export options** provides different inclusion scopes, a Markdown reading brief and a reusable JSON session backup.
 
 ## What is actually computed
 
 - Literal topic matches, with matching papers placed first.
-- Keyword clues for human tissue, human participants, animal work and cells/assays. Each clue can be checked against the sentence that triggered it.
+- Keyword clues for human tissue, human terms, animal work and cells/assays. Each clue can be checked against the sentence that triggered it.
 - Mentions from a small neuroscience compound dictionary, including 7,8-DHF, LM22A-4, ketamine and psilocin.
 - A result-like sentence copied **verbatim** from the supplied abstract, chosen using transparent phrases such as “we found”. Users can select another sentence.
 - Review-paper flags and missing-abstract / mixed-human-animal warnings.

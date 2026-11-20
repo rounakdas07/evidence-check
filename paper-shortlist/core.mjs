@@ -1,4 +1,4 @@
-export const VERSION='1.0.0';
+export const VERSION='1.1.0';
 export const DEFAULT_TERMS=['TrkB','NTRK2','BDNF'];
 export const STATUSES=['new','keep','maybe','skip'];
 export const MAX_RECORDS=250;
@@ -58,8 +58,8 @@ export function parsePasted(text){
 }
 export function parseIds(text){const matches=[...text.matchAll(/\b\d{4,10}\b/g)].map(m=>m[0]);return [...new Set(matches)];}
 export function csvExport(papers,terms){
- const cols=['title','year','pmid','doi','url','decision','source_type_suggested','topic_terms_found','study_clues_suggested','study_label_reviewed','compound_mentions_suggested','compound_label_reviewed','selected_abstract_sentence','sentence_selection','notes','origin','license'];
- const rows=papers.map(p=>{const a=analyse(p,terms);return [p.title,p.year,p.pmid,p.doi,p.url,p.status,a.sourceType,a.found.join('; '),a.clues.map(c=>c.label).join('; '),p.settingOverride,analyse({...p,compoundOverride:''},terms).compounds,p.compoundOverride,a.selectedSentence,p.sentenceOverride>=0?'Reviewer selected':'Rule selected',p.notes,p.origin,p.license];});
+ const cols=['Title','Year','Authors','URL','Decision','Study clues (suggested)','Your study label','Compound mentions (suggested)','Your compound label','Selected abstract sentence','Your note','Sentence chosen by','Source type (suggested)','Topic terms found','PMID','DOI','Input source','Licence'];
+ const rows=papers.map(p=>{const a=analyse(p,terms);return [p.title,p.year,p.authors,p.url,p.status,a.clues.map(c=>c.label).join('; '),p.settingOverride,analyse({...p,compoundOverride:''},terms).compounds,p.compoundOverride,a.selectedSentence,p.notes,p.sentenceOverride>=0?'Reviewer selected':'Rule selected',a.sourceType,a.found.join('; '),p.pmid,p.doi,p.origin,p.license];});
  const quote=v=>{let s=String(v??'');if(/^[\s]*[=+@-]/.test(s))s="'"+s;return '"'+s.replaceAll('"','""')+'"';};return '\uFEFF'+[cols,...rows].map(row=>row.map(quote).join(',')).join('\r\n');
 }
 export function briefExport(papers,terms){return ['# Paper shortlist',`Topic terms: ${terms.join(', ')}`,`Exported ${new Date().toISOString().slice(0,10)} · Paper Shortlist ${VERSION}`,'','Labels are screening suggestions from abstracts, not a study-quality assessment. Sentences are copied from the supplied abstract; they may omit context. Decisions and notes are the reviewer’s.','',...papers.flatMap(p=>{const a=analyse(p,terms);return [`## ${p.title}`,`${p.authors} (${p.year||'year not supplied'})`,`${p.url||'No source link supplied'}`,'',`Decision: ${p.status}`,`Study clues: ${a.setting}`,`Compound mentions: ${a.compounds}`,`Source type: ${a.sourceType}`,'',a.selectedSentence?'> '+a.selectedSentence:'No result-like sentence identified. Read the abstract.',a.flags.length?'Checks: '+a.flags.join(' '):'',p.notes?'Reviewer note: '+p.notes:'',`Input: ${p.origin}`,''];})].join('\n');}
