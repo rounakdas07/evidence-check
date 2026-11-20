@@ -34,7 +34,7 @@ function renderChips(f){let chips=[];if(view==='directory'){
 }
 function compute(){if(!ready)return;const f=readFilters();$('size-error').hidden=view==='saved'||f.max>=f.min;results=queryProviders(providers,f,view==='saved'?savedIds():null);page=1;renderChips(f);writeUrl(f);renderResults();}
 function renderResults(){
- const count=results.length,locCount=results.reduce((n,r)=>n+r.locations.length,0);page=Math.min(page,Math.max(1,Math.ceil(count/PAGE)));$('result-count').innerHTML=`<strong>${num(count)} ${count===1?'provider':'providers'}</strong><span class="result-locations">${num(locCount)} matching locations</span>`;
+ const count=results.length,locCount=results.reduce((n,r)=>n+r.locations.length,0);page=Math.min(page,Math.max(1,Math.ceil(count/PAGE)));$('result-count').innerHTML=`<strong>${num(count)} ${count===1?'provider':'providers'}</strong><span class="result-locations">${num(locCount)} matching ${locCount===1?'location':'locations'}</span>`;
  const start=(page-1)*PAGE;
  $('results').innerHTML=results.slice(start,start+PAGE).map(({provider:p,locations:ls})=>{
   const rs=[...new Set(ls.map(l=>regionName(meta.regions[l.region])))].sort(),ss=serviceNames(ls.reduce((m,l)=>m|l.services,0),meta);
