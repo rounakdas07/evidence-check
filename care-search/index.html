@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Search CQC-registered care providers, explore their locations and export a shortlist to Excel. A working directory built by Rounak Das.">
+<meta name="theme-color" content="#161d2c"><title>Care Search — find and shortlist care providers</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to results</a>
+<header class="topbar">
+ <a class="brand" href="./" aria-label="Care Search home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Care Search</a>
+ <nav aria-label="Workspace"><button id="directory-tab" class="nav-tab active" aria-current="page">Directory</button><button id="saved-tab" class="nav-tab">Saved <span id="saved-count">0</span></button></nav>
+ <button id="sources-button" class="nav-source" aria-label="About the data">About the data</button>
+</header>
+<div class="workspace">
+ <aside id="filters" class="sidebar" aria-label="Filter providers">
+  <div class="filter-heading"><h2>Filters</h2><button id="reset" class="text-button">Reset</button><button id="close-filters" class="icon-button mobile-only" aria-label="Close filters">×</button></div>
+  <form id="filters-form">
+   <fieldset><legend>Provider size</legend><p class="field-help">Registered care locations in total</p>
+    <div class="preset-row"><button type="button" data-size="all">Any size</button><button type="button" data-size="multi">2+</button><button type="button" data-size="medium" class="selected">5–50</button></div>
+    <div class="number-pair"><label>Minimum<input id="min-sites" type="number" min="1" step="1" value="5" inputmode="numeric"></label><span>–</span><label>Maximum<input id="max-sites" type="number" min="1" step="1" value="50" inputmode="numeric" placeholder="Any"></label></div>
+    <p id="size-error" class="input-error" hidden>Maximum must be at least minimum.</p>
+   </fieldset>
+   <fieldset><legend>Location</legend><label for="region">Region</label><select id="region"><option value="">All regions</option></select><label for="area">Local authority</label><select id="area"><option value="">All local authorities</option></select></fieldset>
+   <fieldset><legend>Care services</legend><p class="field-help">Match any selected service</p><div id="service-options"></div></fieldset>
+  </form>
+  <button id="apply-filters" class="primary mobile-only">Show results</button>
+  <div class="sidebar-note"><span class="source-dot"></span><strong>CQC public register</strong><p id="snapshot-note">Directory · 19 Nov 2026</p><button id="method-button" class="text-button">Sources &amp; definitions</button></div>
+ </aside>
+ <div id="filter-scrim" hidden></div>
+ <main id="main" tabindex="-1">
+  <div class="page-heading"><div><p class="eyebrow" id="view-eyebrow">ENGLAND · CARE PROVIDERS</p><h1 id="page-title">Find care providers</h1><p id="page-description">Search providers, check their locations and build an exportable shortlist.</p></div><div class="date-label">CQC snapshot<strong>19 Nov 2026</strong></div></div>
+  <div class="search-row"><label class="search-field"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><span class="sr-only">Search providers, locations or postcodes</span><input id="search" type="search" placeholder="Provider, location or postcode" autocomplete="off" spellcheck="false"><kbd aria-hidden="true">/</kbd></label><button id="show-filters" class="secondary mobile-only">Filters <span id="filter-count"></span></button><button id="export" class="primary" disabled><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5"/></svg><span>Export Excel</span></button></div>
+  <div id="saved-notice" class="saved-notice" hidden>Saved on this browser. Export your list to keep a copy or share it.</div>
+  <div id="active-filters" class="active-filters" aria-label="Active filters"></div>
+  <div class="result-toolbar"><div id="result-count" role="status" aria-live="polite">Loading the CQC directory…</div><label class="sort-label">Sort by <select id="sort"><option value="size">Most locations</option><option value="name">Provider A–Z</option></select></label></div>
+  <div id="table-shell" class="table-shell" aria-busy="true"><table class="provider-table"><thead><tr><th scope="col">Provider</th><th scope="col" class="numeric">Locations</th><th scope="col">Care services</th><th scope="col">Regions</th><th scope="col"><span class="sr-only">Save provider</span></th></tr></thead><tbody id="results"><tr><td colspan="5" class="loading">Loading real provider and location records…</td></tr></tbody></table></div>
+  <div id="empty" class="empty-state" hidden></div>
+  <div class="pagination" id="pagination"><span id="page-info"></span><div><button id="previous" class="secondary" disabled>Previous</button><button id="next" class="secondary" disabled>Next</button></div></div>
+  <footer class="page-footer"><p id="coverage">CQC information, used under the Open Government Licence v3.0.</p><p>Built by <a href="https://github.com/rounakdas07/evidence-check/tree/main/care-search" target="_blank" rel="noopener noreferrer">Rounak Das</a> · Independent prototype for Sona</p></footer>
+ </main>
+</div>
+<dialog id="provider-dialog" class="provider-drawer" aria-labelledby="provider-title"><div id="provider-content"></div></dialog>
+<dialog id="sources-dialog" class="sources-dialog" aria-labelledby="sources-title"><div class="dialog-top"><h2 id="sources-title">About this directory</h2><button id="close-sources" class="icon-button" aria-label="Close data information">×</button></div><div class="sources-body">
+ <p>A searchable view of CQC’s public register, built to help research care providers and their registered locations.</p>
+ <h3>What is included?</h3><p id="source-coverage"></p><p>We include locations with at least one of six CQC service types: nursing homes, residential homes, homecare agencies, supported living, supported housing or shared lives. Other services are excluded.</p>
+ <h3>What does “provider” mean?</h3><p>One CQC provider ID. This is a registered legal entity, not necessarily an entire corporate group. Separate registrations are not merged, even if they share a brand or website.</p>
+ <h3>What do the counts mean?</h3><p>Unique CQC location IDs in the selected care service types. Size filters use each provider’s total across the dataset; region and service filters then find matching locations. Locations may be branches or offices, not individual homes. Dual registrations can refer to the same physical premises. Counts are not staffing, occupancy or market-capacity estimates.</p>
+ <h3>Dates and limitations</h3><p>The directory is a fixed <strong>19 November 2026</strong> snapshot. Provider websites, brand labels, company numbers and care-home bed counts are joined by CQC IDs from the <strong>2 November 2026</strong> file. Missing values are left blank. Beds are shown per location and never summed across dual registrations.</p><p>CQC reports delays in its published data, including registration cancellations. Verify a record with CQC and the provider before acting. The directory does not indicate buying intent, vacancies or whether a provider already uses Sona.</p>
+ <h3>Sources and reuse</h3><ul><li><a href="https://www.cqc.org.uk/about-us/transparency/using-cqc-data" target="_blank" rel="noopener noreferrer">CQC data guidance and update notices</a></li><li><a href="https://www.cqc.org.uk/system/files/2026-11/19_November_2026_CQC_directory.csv">Care directory · 19 Nov 2026 (CSV)</a></li><li><a href="https://www.cqc.org.uk/system/files/2026-11/2_November_2026_HSCA_Active_Locations.ods">Directory with filters · 2 Nov 2026 (ODS)</a></li><li><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank" rel="noopener noreferrer">Open Government Licence v3.0</a></li></ul><p>Contains Care Quality Commission information licensed under the Open Government Licence v3.0. This independent prototype is not affiliated with or endorsed by CQC or Sona.</p>
+ <h3>Your saved list</h3><p>Saved providers and notes stay in this browser’s local storage. They are not sent to a server and are not included in shared search links. Clearing browser data removes them. Use Excel export to keep a copy. No analytics, account or API key is required.</p>
+</div></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<noscript><div class="noscript">Enable JavaScript to search this directory, or <a href="https://www.cqc.org.uk/about-us/transparency/using-cqc-data">download CQC’s original files</a>.</div></noscript>
+<script type="module" src="app.js"></script>
+</body></html>
