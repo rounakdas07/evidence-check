@@ -40,7 +40,7 @@ function renderDetail(){
  if(route)$('#copy-email').onclick=()=>copyText(route.email,'Email address copied');
  $('#all-evidence').onclick=()=>{expanded=true;renderDetail();$('.evidence').scrollIntoView({block:'start',behavior:'instant'});};
  if($('#more'))$('#more').onclick=()=>{expanded=!expanded;renderDetail();};
- $('#stage').onchange=e=>{const stage=e.target.value;setWork(l.id,{stage,saved:['Shortlisted','Contacted','In conversation'].includes(stage)?true:getWork(l.id).saved});renderList();$('#save-status').textContent=canStore?'Stage saved in this browser.':'Export to keep your changes.';};
+ $('#stage').onchange=e=>{const stage=e.target.value;setWork(l.id,{stage,saved:['Shortlisted','Contacted','In conversation'].includes(stage)?true:getWork(l.id).saved});renderList();const saved=getWork(l.id).saved;$('#save-detail').textContent=saved?'Saved to shortlist':'Save to shortlist';$('#save-detail').setAttribute('aria-pressed',String(saved));$('#save-status').textContent=canStore?'Stage saved in this browser.':'Export to keep your changes.';};
  $('#notes').oninput=e=>{setWork(l.id,{note:e.target.value});$('#save-status').textContent=canStore?'Notes saved in this browser.':'Export to keep your notes.';};
 }
 function render(){const leads=visible();if(!leads.some(l=>l.id===selection))selection=leads[0]?.id||'';renderList();renderDetail();}
