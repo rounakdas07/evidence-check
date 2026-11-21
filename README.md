@@ -1,5 +1,8 @@
 # Evidence Check
 
+**Other projects now have separate repositories.** [View the full project list](PROJECTS.md).
+
+
 **A small, source-linked oncology challenge pack for checking whether AI claims stay within the supplied evidence.**
 
 [Open the tool](https://rounakdas07.github.io/evidence-check/)

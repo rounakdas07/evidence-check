@@ -1,1 +1,0 @@
-{"name":"cancer-dataset-finder","version":"1.0.0","private":true,"type":"module","scripts":{"test":"node --test tests/core.test.mjs","verify":"node scripts/verify.mjs"}}

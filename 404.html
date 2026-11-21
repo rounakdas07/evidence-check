@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project moved — Rounak Das</title><script>
+const moved={"cancer-datasets": "cancer-datasets", "care-search": "care-search", "paper-shortlist": "paper-shortlist", "partners": "partner-book", "spotlight": "spotlight-reach", "urine": "prostate-urine-studies"};
+const prefix='/evidence-check/';
+if(location.pathname.startsWith(prefix)){
+ const parts=location.pathname.slice(prefix.length).split('/');
+ const repo=moved[parts.shift()];
+ if(repo){const rest=parts.join('/').replace(/^\/+/, '');location.replace('https://rounakdas07.github.io/'+repo+'/'+rest+location.search+location.hash);}
+}
+</script><style>body{font-family:Arial,sans-serif;max-width:700px;margin:70px auto;padding:0 24px;line-height:1.7}a{color:#304aa0}</style></head><body><h1>These tools now have their own repositories</h1><p>Choose the project below if you are not redirected automatically.</p><ul><li><a href="https://rounakdas07.github.io/cancer-datasets/">cancer-datasets</a></li><li><a href="https://rounakdas07.github.io/care-search/">care-search</a></li><li><a href="https://rounakdas07.github.io/paper-shortlist/">paper-shortlist</a></li><li><a href="https://rounakdas07.github.io/partner-book/">partner-book</a></li><li><a href="https://rounakdas07.github.io/spotlight-reach/">spotlight-reach</a></li><li><a href="https://rounakdas07.github.io/prostate-urine-studies/">prostate-urine-studies</a></li></ul><p><a href="https://rounakdas07.github.io/evidence-check/">Evidence Check</a></p></body></html>
