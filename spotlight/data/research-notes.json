@@ -1,0 +1,218 @@
+{
+  "sources": [
+    {
+      "id": "product-scope",
+      "url": "https://spotlightpathology.com/digital-pathology",
+      "fact": "Spotlight Lymphoma processes scanned H&E-stained lymph node biopsies. Spotlight Trephine is listed as coming soon."
+    },
+    {
+      "id": "sam-linkedin",
+      "url": "https://uk.linkedin.com/in/samantha-perona-westgate",
+      "fact": "Samantha Perona (Westgate), CEO of Spotlight Pathology."
+    },
+    {
+      "id": "nhse-existing-dashboard",
+      "url": "https://www.england.nhs.uk/statistics/statistical-work-areas/cancer-waiting-times/",
+      "fact": "NHS England advertises an interactive cancer waiting-times dashboard from April 2026 covering the latest 12 months, alongside provider-level data extracts."
+    },
+    {
+      "id": "derby-platform",
+      "published": "2025-06-10",
+      "url": "https://www.fujifilm.com/si/en/news/FUJIFILM_Healthcare_Europe_and_IBEX_announce_partnership",
+      "fact": "Fujifilm identifies UHDB cellular pathologist Nirav Gandhi as a customer in its SYNAPSE Pathology and Ibex partnership announcement. This does not establish complete digitisation or lymphoma compatibility."
+    },
+    {
+      "id": "sussex-site-qualification",
+      "published": "2026-09",
+      "url": "https://www.qvh.nhs.uk/wp-content/uploads/2026/09/Papers-PUBLIC-Board-16-Sepetember-2026-V4.pdf",
+      "fact": "Queen Victoria Hospital board papers describe site-specific digital histopathology integration and go-live delays. Network-level digital activity does not establish every member site's readiness."
+    },
+    {
+      "id": "sussex-platform",
+      "published": "2024-03-14",
+      "url": "https://www.esht.nhs.uk/2024/03/14/first-laboratory-in-the-sussex-pathology-network-to-introduce-digital-pathology/",
+      "fact": "East Sussex Healthcare reports introducing digital slide scanners and Sectra PACS, as the first laboratory in the Sussex Pathology Network to do so."
+    },
+    {
+      "id": "sussex-directors-route",
+      "url": "https://www.uhsussex.nhs.uk/wp-content/uploads/2025/10/Research-annual-review-2024-25.pdf",
+      "fact": "UHSussex's annual review publishes uhsussex.ridirectors@nhs.net as the shared contact for its research and innovation directors."
+    },
+    {
+      "id": "cheshire-merseyside-relationship",
+      "url": "https://spotlightpathology.com/spotlight-lymphoma",
+      "fact": "Company product page quotes Cheshire and Merseyside HODS clinical director Geetha Menon describing work with Spotlight. The testimonial does not establish a purchase or identify a contracting trust ODS code."
+    }
+  ],
+  "RAJ": {
+    "name": "Mid and South Essex NHS Foundation Trust",
+    "readiness": {
+      "status": "transition",
+      "text": "A Southend employer advert closing 22 November 2026 says a digital infrastructure upgrade will enable digital pathology access in the coming months. Trust-wide operational coverage has not been verified.",
+      "platform": null,
+      "published": null,
+      "url": "https://apps.trac.jobs/job-advert/8229746?ShowJobAdvert=&feedid=9002"
+    },
+    "network": {
+      "name": "Mid and South Essex laboratory service / SYNLAB Essex",
+      "url": "https://www.mse.nhs.uk/pathology-services",
+      "text": "Trust page updated 13 November 2026 says laboratory services are provided by SYNLAB Essex from 1 October 2026, with a phased transition joining Basildon, Broomfield and Southend services."
+    },
+    "route": {
+      "label": "MSE innovation team",
+      "email": "mse.innovation@nhs.net",
+      "url": "https://www.mse.nhs.uk/innovation-at-mse"
+    },
+    "nextQuestion": "Suggested: Which SYNLAB Essex laboratory reads the trust's lymphoma biopsies, and when will its slide scanning and digital reporting workflow be available for evaluation?"
+  },
+  "RAL": {
+    "name": "Royal Free London NHS Foundation Trust",
+    "readiness": {
+      "status": "operational",
+      "text": "NPIC announced Royal Free, UCLH and Whittington had gone live on its digital pathology network in August 2025. The announcement names Sectra, Exponential-e and Health Services Laboratories. Lymphoma-specific coverage and Spotlight compatibility are not established.",
+      "platform": "NPIC / Sectra",
+      "published": "2025-08-18",
+      "url": "https://npic.ac.uk/2025/08/18/three-leading-london-nhs-trusts-go-live-on-npic-digital-pathology-network-pioneering-digital-collaboration-across-england/"
+    },
+    "network": {
+      "name": "North Central London / Health Services Laboratories / NPIC",
+      "url": "https://npic.ac.uk/2025/08/18/three-leading-london-nhs-trusts-go-live-on-npic-digital-pathology-network-pioneering-digital-collaboration-across-england/"
+    },
+    "route": {
+      "label": "HSL research and innovation enquiries",
+      "email": "research@hslpathology.com",
+      "url": "https://www.hslpathology.com/research-and-innovation/"
+    },
+    "nextQuestion": "Suggested: Can HSL's digital pathology team confirm local lymph-node scanning coverage and the evaluation route for an additional lymphoma triage tool?"
+  },
+  "RTG": {
+    "name": "University Hospitals of Derby and Burton NHS Foundation Trust",
+    "readiness": {
+      "status": "transition",
+      "text": "An employer advert closing 8 October 2026 describes implementation of full histopathology digitisation at Royal Derby. Fujifilm separately identifies a UHDB cellular pathologist as a customer; full service coverage has not been verified.",
+      "platform": "Fujifilm SYNAPSE Pathology; full coverage unverified",
+      "published": null,
+      "url": "https://apps.trac.jobs/job-advert/8317863?ShowJobAdvert=&feedid=9002",
+      "platformSourceUrl": "https://www.fujifilm.com/si/en/news/FUJIFILM_Healthcare_Europe_and_IBEX_announce_partnership"
+    },
+    "network": {
+      "name": "Derbyshire Pathology",
+      "url": "https://apps.trac.jobs/job-advert/8317863?ShowJobAdvert=&feedid=9002",
+      "text": "Employer identifies laboratories at Chesterfield Royal, Royal Derby and Queen's Hospital Burton as Derbyshire Pathology; histopathology is based at Royal Derby."
+    },
+    "route": {
+      "label": "UHDB research and development office",
+      "email": "uhdb.randdadmin@nhs.net",
+      "url": "https://www.uhdb.nhs.uk/research-our-teams"
+    },
+    "nextQuestion": "Suggested: Are lymphoma biopsies included in the current digital reporting scope, and who owns evaluation and integration of additional tools in the Fujifilm workflow?"
+  },
+  "RYR": {
+    "name": "University Hospitals Sussex NHS Foundation Trust",
+    "readiness": {
+      "status": "network",
+      "text": "A July 2026 NHS announcement reports an established shared digital histopathology service across the Sussex Pathology Network. This is network-level evidence; UHSussex site and lymphoma coverage need confirmation.",
+      "platform": "Sectra evidenced at network member East Sussex Healthcare; UHSussex coverage unverified",
+      "published": "2026-07-10",
+      "url": "https://www.esht.nhs.uk/2026/07/10/sussex-pathology-network-wins-national-partnership-working-award/",
+      "platformSourceUrl": "https://www.esht.nhs.uk/2024/03/14/first-laboratory-in-the-sussex-pathology-network-to-introduce-digital-pathology/"
+    },
+    "network": {
+      "name": "Sussex Pathology Network",
+      "url": "https://www.esht.nhs.uk/2026/07/10/sussex-pathology-network-wins-national-partnership-working-award/",
+      "text": "Network partners are East Sussex Healthcare, University Hospitals Sussex and Queen Victoria Hospital."
+    },
+    "route": {
+      "label": "UHSussex research and innovation directors",
+      "email": "uhsussex.ridirectors@nhs.net",
+      "url": "https://www.uhsussex.nhs.uk/wp-content/uploads/2025/10/Research-annual-review-2024-25.pdf"
+    },
+    "nextQuestion": "Suggested: Which UHSussex sites currently scan and report lymph-node biopsies digitally, and would an evaluation be approved locally or through the Sussex Pathology Network?"
+  },
+  "RHM": {
+    "name": "University Hospital Southampton NHS Foundation Trust",
+    "readiness": {
+      "status": "transition",
+      "text": "The March 2026 Spotlight procurement describes integration and validation within UHS digital pathology, followed by intended routine workflow use. An operational go-live has not been independently verified.",
+      "platform": null,
+      "published": "2026-03-06",
+      "url": "https://www.find-tender.service.gov.uk/Notice/020167-2026/PDF"
+    },
+    "route": {
+      "label": "Published procurement contact; existing relationship",
+      "email": "wplcontractsadministrator@wpl.uhs.nhs.uk",
+      "url": "https://www.sell2wales.gov.wales/search/show/search_view.aspx?ID=MAR595584&catID="
+    },
+    "relationship": {
+      "kind": "award",
+      "text": "Published Spotlight Lymphoma Diagnostic Triage contract award, reference WPL06379, 6 March 2026, estimated 23 March 2026 to 22 March 2030. Existing procurement relationship; clinical go-live is unverified.",
+      "url": "https://www.find-tender.service.gov.uk/Notice/020167-2026/PDF"
+    },
+    "nextQuestion": "Suggested: What is the current validation and deployment stage under the existing award, and which rollout lessons can inform other sites?"
+  },
+  "RTD": {
+    "name": "The Newcastle upon Tyne Hospitals NHS Foundation Trust",
+    "readiness": {
+      "status": "unknown",
+      "text": "Research collaboration is documented. The current clinical digital pathology deployment scope was not verified in this review.",
+      "platform": null,
+      "published": null,
+      "url": null
+    },
+    "route": {
+      "label": "Newcastle research and innovation laboratories",
+      "url": "https://commercial.newcastle-hospitals.nhs.uk/work-with-us/research-and-innovation-laboratories/"
+    },
+    "relationship": {
+      "kind": "collaboration",
+      "text": "The primary study Lymphoma triage from H&E using AI for improved clinical management includes Spotlight, Newcastle University and Newcastle Hospitals authors and Newcastle data. This establishes research collaboration, not a paying customer or clinical deployment.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37945334/"
+    },
+    "nextQuestion": "Suggested: Is the existing Spotlight research collaboration moving into clinical validation or deployment, and what is its current scope?"
+  },
+  "RR8": {
+    "name": "Leeds Teaching Hospitals NHS Trust",
+    "readiness": {
+      "status": "network",
+      "text": "NPIC is based at Leeds Teaching Hospitals and operates a digital pathology programme. Local clinical lymphoma workflow coverage was not separately verified in this review.",
+      "platform": "NPIC; local lymphoma workflow unverified",
+      "published": "2024-10-08",
+      "url": "https://npic.ac.uk/2024/10/08/npic-to-receive-funding-for-two-government-funded-initiatives-aimed-at-faster-diagnosis-and-personalised-treatment-of-cancer/"
+    },
+    "network": {
+      "name": "National Pathology Imaging Co-operative (NPIC)",
+      "url": "https://npic.ac.uk/deployment/"
+    },
+    "route": {
+      "label": "NPIC team",
+      "url": "https://npic.ac.uk/contact/"
+    },
+    "relationship": {
+      "kind": "collaboration",
+      "text": "NPIC's October 2024 announcement names a funded Spotlight HMDS project with Spotlight Pathology. Research collaboration; this does not make all NPIC member trusts Spotlight customers.",
+      "url": "https://npic.ac.uk/2024/10/08/npic-to-receive-funding-for-two-government-funded-initiatives-aimed-at-faster-diagnosis-and-personalised-treatment-of-cancer/"
+    },
+    "nextQuestion": "Suggested: Which elements of the existing NPIC/Spotlight project are validated for clinical use and transferable to other member trusts?"
+  },
+  "R0A": {
+    "name": "Manchester University NHS Foundation Trust",
+    "readiness": {
+      "status": "unknown",
+      "text": "A founder-linked research relationship is documented. Current trust-wide digital histopathology deployment scope was not verified in this review.",
+      "platform": null,
+      "published": null,
+      "url": null
+    },
+    "route": {
+      "label": "MFT industry research and innovation enquiry form",
+      "url": "https://research.cmft.nhs.uk/contact/industry-enquiry-submission-form"
+    },
+    "relationship": {
+      "kind": "founder",
+      "text": "Spotlight cofounder and chief medical officer Richard Byers is an MFT consultant haematopathologist. MFT also appears in the company's primary lymphoma triage research. Treat as an existing founder-linked research relationship, not a new prospect or proven commercial customer.",
+      "url": "https://spotlightpathology.com/about",
+      "researchSourceUrl": "https://pubmed.ncbi.nlm.nih.gov/37945334/"
+    },
+    "nextQuestion": "Suggested: What unmet deployment needs remain within the existing MFT relationship, and which local results could support rollout elsewhere?"
+  }
+}

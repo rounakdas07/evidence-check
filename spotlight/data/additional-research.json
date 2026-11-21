@@ -1,0 +1,25 @@
+{
+ "RJE": {
+  "shortName":"North Midlands",
+  "readiness":{"status":"operational","text":"The Trust reports fully digital histopathology reporting and says its next phase will explore AI in diagnostic reporting.","platform":"Sectra PACS","published":"2026-07-20","url":"https://www.uhnm.nhs.uk/latest-uhnm-news/uhnm-first-in-the-midlands-to-achieve-100-per-cent-digital-histopathology-reporting/"},
+  "network":{"name":"North Midlands & Cheshire Pathology Service","url":"https://www.uhnm.nhs.uk/latest-uhnm-news/uhnm-first-in-the-midlands-to-achieve-100-per-cent-digital-histopathology-reporting/"},
+  "route":{"label":"Research & Innovation — commercial enquiries","email":"research@uhnm.nhs.uk","url":"https://www.uhnm.nhs.uk/research/research-and-innovation/"},
+  "aiSignal":{"text":"The Trust explicitly identifies AI-supported reporting as its next area to explore.","url":"https://www.uhnm.nhs.uk/latest-uhnm-news/uhnm-first-in-the-midlands-to-achieve-100-per-cent-digital-histopathology-reporting/"},
+  "nextQuestion":"Ask R&I to connect Spotlight with the digital histopathology lead. Confirm lymphoma-slide coverage on Sectra and whether a lymphoma-triage evaluation fits their stated next step in AI. Establish where the pathway delays occur.",
+  "checked":"2026-11-21"
+ },
+ "RX1": {
+  "shortName":"Nottingham",
+  "readiness":{"status":"operational","text":"A vendor case study documents a clinical digital pathology workflow using HALO AP at NUH. Reconfirm present coverage and integration requirements.","platform":"HALO AP / Hamamatsu","published":"2023-10-13","url":"https://cdn.indicalab.com/wp-content/uploads/20231016133440/NUH_CaseStudy_10-13-2023.pdf"},
+  "route":{"label":"NUH Industry and Contracts Team","email":"nuhnt.researchcontracts@nhs.net","url":"https://www.nuh.nhs.uk/industry-ri/"},
+  "nextQuestion":"Ask the Industry and Contracts Team to involve the lymphoma-reporting service and digital pathology lead. Check current HALO AP integration options and how much of the diagnostic interval is laboratory turnaround.",
+  "checked":"2026-11-21"
+ },
+ "RWE": {
+  "shortName":"Leicester",
+  "readiness":{"status":"unknown","text":"A local clinical digital-pathology deployment has not been verified in this research. A procurement made by Leicester on behalf of Derby and Pathlinks does not establish Leicester's own readiness.","platform":"Not verified"},
+  "route":{"label":"Health Innovation Hub — submit a solution","url":"https://www.uhleicester.nhs.uk/research/health-innovation-hub/innovate-with-us/"},
+  "nextQuestion":"Use the Health Innovation Hub to confirm the lymphoma-reporting laboratory, current digitisation and the right clinical sponsor. Establish whether a digital-triage evaluation addresses a documented laboratory bottleneck.",
+  "checked":"2026-11-21"
+ }
+}

@@ -1,0 +1,59 @@
+{
+  "retrievedAt": "2026-11-21T22:36:51.793236+00:00",
+  "builtAt": "2026-11-21T22:52:31.997607+00:00",
+  "periods": [
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09"
+  ],
+  "rawRowCount": 155669,
+  "providerRowCount": 114569,
+  "sourceProviderCount": 165,
+  "selectedRowCount": 2125,
+  "nhsTrustCount": 129,
+  "trustCount": 131,
+  "sources": [
+    {
+      "id": "apr-jul",
+      "file": "2026-04-to-07.csv",
+      "url": "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2026/09/2026-27-Apr-Jul-Monthly-Combined-CSV-Provisional.csv",
+      "label": "April\u2013July 2026 combined CSV (provisional)",
+      "period": null,
+      "retrievedAt": "2026-11-21T22:36:51.793236+00:00",
+      "rows": 103914,
+      "sha256": "79f65e0af07cba7730eb968fc64693c7159b5ac37c8354ab3c001093bb319603",
+      "bytes": 19730426
+    },
+    {
+      "id": "aug",
+      "file": "2026-08.csv",
+      "url": "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2026/10/August-2026-Monthly-Combined-CSV-Provisional.csv",
+      "label": "August 2026 combined CSV (provisional)",
+      "period": "2026-08",
+      "retrievedAt": "2026-11-21T22:36:51.246887+00:00",
+      "rows": 25767,
+      "sha256": "7d16a96b2e8ccb98d1eb7d3a8f27a32ab6e248e88220aa22e32d20d034e41a07",
+      "bytes": 4992574
+    },
+    {
+      "id": "sep",
+      "file": "2026-09.csv",
+      "url": "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2026/11/September-2026-Monthly-Combined-CSV-Provisional.csv",
+      "label": "September 2026 combined CSV (provisional)",
+      "period": "2026-09",
+      "retrievedAt": "2026-11-21T22:35:39.608075+00:00",
+      "rows": 25988,
+      "sha256": "1c36158986dfcac999d836c86ce9ba933ca9ea410a9eba813c4952a4c88163a8",
+      "bytes": 4650274
+    }
+  ],
+  "publicationIndex": "https://www.england.nhs.uk/statistics/statistical-work-areas/cancer-waiting-times/",
+  "definitions": {
+    "fds": "Suspected haematological malignancies (excluding acute leukaemia) / FDS / ALL ROUTES",
+    "lymphoma": "Haematological - Lymphoma / 31D / First Treatment / ALL MODALITIES",
+    "treatment62": "Haematological - Lymphoma / 62D / ALL ROUTES / ALL MODALITIES"
+  }
+}
